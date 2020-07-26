@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">AKAN CULTURE</a>
+        
+    </header>
+    <h1>KNOW YOUR NAME</h1>
+    <div class="register"> 
+        <form method="POST" id="register" action="">
+            <h2>ENTER YOUR DETAILS</h2>
+            <label for="year" >YEAR</label><br>
+            <input type="number" placeholder="Enter your year of birth" id="year"><br><br>
+            <label for="month">MONTH</label><br>
+            <input type="number" placeholder="Enter the month you were born" id="month"><br><br>
+            <label for="monthDay" >Day OF THE MONTH</label><br>
+            <input type="number" placeholder="Enter day of the month" id="monthday"><br><br>
+            <label for="century">CENTURY</label><br>
+            <input type="number" placeholder="Enter the century" id="century" 
+            placeholder="Enter the century"><br><br>
+            <br><br>
+            <input type="radio" value="male" id="rad1" name="rads" required ><span>&nbsp; Male
+            </span> &nbsp; &nbsp;
+            <input type="radio" value="female" id="rad1" name="rads" required ><span>&nbsp; Female
+            </span> &nbsp; &nbsp;
+
+        </form>
+        <br>
+        <a href="#result"><button type="button" name="button" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+        <h1 id="result"></h1>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
